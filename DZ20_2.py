@@ -9,8 +9,8 @@ new_word = input("Введите слово: ")
 new_word = new_word.upper()
 print(new_word)
 summ = 0
-for key in list_1:
-    for i in range(len(new_word)):
+for i in range(len(new_word)):
+    for key in list_1:
         if key.__contains__(new_word[i]):
             summ = summ + list_1.get(key) 
-print(summ)        
+print(summ)     
